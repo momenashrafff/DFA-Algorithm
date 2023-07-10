@@ -23,7 +23,7 @@ public class Main {
     public static void main(String[] args) {
         String parse = "q0;q1;d#0;1#q0,0,d;q0,1,q1;q1,0,q0;q1,1,q0;d,0,d;d,1,d#q0#q0;q1";
         DFA dfa1 = generateDFA(parse);
-        System.out.println(dfa1.isLanguageDFA("abab"));       // Output: Rejected
+        System.out.println(dfa1.isLanguageDFA("abab"));       // Output: Invalid String
         System.out.println(dfa1.isLanguageDFA("10111011"));  // Output: Accepted
         System.out.println(dfa1.isLanguageDFA(""));           // Output: Accepted
         System.out.println(dfa1.isLanguageDFA("10011110"));  // Output: Rejected
